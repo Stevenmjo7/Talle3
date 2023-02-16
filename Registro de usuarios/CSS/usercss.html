@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Datos</title>
+          <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minumum-scale=1">
+         <link rel="stylesheet" href="Taller3css.css">
+    </head>
+    <body>
+        <h1>Registro de Usaurios</h1>
+        <form action="/my-handling-form-page" method="post" class="form__register">
+            <h2 class="form__titulo">Registarse</h2>
+            <div class="contenedor-inputs">
+                <input type="number" name="Id_Usuario" placeholder="&#128205; ID Usuario" required class="input-48" value="">
+                <form name="Paises">
+                    <input type="text" class="input-48"  list="items" placeholder="&#x1f310; ID Pais"/>
+                    <datalist id="items">
+                      <option value="Colombia"></option>
+                      <option value="Usa"></option>
+                      <option value="Japon"></option>
+                    </datalist>
+                </form>
+                <input type="text" name="Nombre" placeholder="&#128100; Nombre" required class="input-48" value="">
+                <input type="text" name="Apellido" placeholder="&#128100; Apellidos" required class="input-48" value="">
+                <input type="text" name="Direccion" placeholder="&#127968; Direccion" required class="input-48" value="">
+                <input type="text" name="Cedula" placeholder="&#128100; Cedula" required class="input-48" value="">
+                <input type="text" name="Telefono" placeholder="&#9743; Telefono" required class="input-100" value="">
+                <input type="mail" name="Correo" placeholder="&#128231; Correo" required class="input-100" value="">
+                <input type="password" name="Contraseña" placeholder="&#128272; Contraseña" required class="input-100" value="">
+                <input type="submit" value="Registrarse" class="btn-enviar" required>
+            </div>
+            </form>
+    </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de vehiculos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="carcss.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-auto">
+                <h1>
+                    </h1class> Registro de Autos</h1>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="datos">Identificación Usuario</h4>
+<select name="select">
+ <option value="CC">CC</option> 
+ <option value="TI" selected>TI</option>
+ <option value="CE">CE</option>
+ <input class="controls" type="number" class="form-control" placeholder="NumeroID" arial-label="UserId"  name="numero" value="" min="0" max="100000000" />
+</select>
+
+<h4 class="datos">Datos del vehiculo</h4>
+
+<p class="heading">Tipo de Transmisión</p>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+             Manual
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+             Automatica
+        </label>
+    </div>
+    
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Motor</span>
+        <input type="text" class="form-control" placeholder="Motor de su Vehiculo" aria-label="Username"
+            aria-describedby="basic-addon1">
+    </div>
+
+    <p class="heading">Tipo de Combustible</p>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+             Gasolina
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+             Diesel
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+             Gas Natural
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+             Electricidad
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+             Otro
+        </label>
+    </div>
+
+    <div class="input2 input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Tipo de Coche</label>
+        <select class="form-select" id="inputGroupSelect01">
+            <option value="select" selected>Selecciona-</option>
+            <option value="tipocoche">Urbano</option>
+            <option value="tipocoche">Sedan </option>
+            <option value="tipocoche">Coupe</option>
+            <option value="tipocoche">Deportivo </option>
+            <option value="tipocoche">Todo terreno</option>
+            <option value="tipocoche">HatchBack</option>
+            <option value="tipocoche">Descapotable</option>
+            <option value="tipocoche">SUV</option>
+            <option value="tipocoche"> Roadster</option>
+            <option value="tipocoche">PickUp</option>
+        </select>
+    </div>
+
+
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Estado del vehiculo</label>
+        <select class="form-select" id="inputGroupSelect01">
+            <option value="select" selected>Selecciona</option>
+            <option value="ID">Excelente</option>
+            <option value="ID">Muy Bueno</option>
+            <option value="ID">Bueno</option>
+            <option value="ID">Aceptable</option>
+            <option value="ID">Mal</option>
+        </select>
+    </div>
+
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Marca del vehiculo</label>
+        <select class="form-select" id="inputGroupSelect01">
+            <option value="select" selected>Selecciona-</option>
+            <option value="marca">Subaru</option>
+            <option value="marca">Mazda </option>
+            <option value="marca">BMW</option>
+            <option value="marca">Chevrolet </option>
+            <option value="marca">Audi</option>
+            <option value="marca">Honda</option>
+            <option value="marca">Toyota</option>
+            <option value="marca">Nissan</option>
+        </select>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Id Vehiculo</span>
+        <input type="text" class="form-control" placeholder="ID Vehiculo" aria-label="Username"
+            aria-describedby="basic-addon1">
+    </div> 
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Modelo del vehiculo</span>
+        <input type="text" class="form-control" placeholder="Modelo" aria-label="Username"
+            aria-describedby="basic-addon1">
+        <span class="input-group-text" id="basic-addon2">Año de fabricacion</span>
+        <input type="text" class="form-control" placeholder="Año de fab" maxlength="4">
+    </div>
+    
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Cilindraje del vehiculo</span>
+        <input type="text" class="form-control" placeholder="Cilindraje en centimetros cubicos" aria-label="Username"
+            aria-describedby="basic-addon1">
+        <span class="input-group-text" id="basic-addon1">cc</span>
+    </div>
+
+    <h4 class="datos">Datos de venta</h4>
+
+
+    <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupSelect01">Moneda</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option value="" class="value"> US $</option>
+            <option value="" class="value">EUR €</option>
+            <option value="" class="value">COP $</option>
+            <option value="select" selected>Selecciona</option>
+        </select>
+        <label class="input-group-text" for="inputGroupSelect01">Precio</label>
+        <input type="text" class="form-control" placeholder="Precio del vehiculo" aria-label="Username"
+            aria-describedby="basic-addon1">
+    </div>
+    <div class="field">
+        <p class="heading">Fecha de publicacion:</p>
+        <input type="date" name="Fe pu" />
+    </div>
+    <div class="textarea form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Detalles del vehiculo</label>
+    </div>
+    <div class="button">
+        <button type="button" class="btn btn-outline-primary">REGISTRAR!</button>
+    </div>
+    </form>
+</body>
+
+
+</html>
